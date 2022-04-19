@@ -1,0 +1,15 @@
+﻿.lay-1{
+    position: absolute;
+    top:20px;
+}
+.mar-1{
+    margin:100px
+}
+.NTSpecies {
+    bottom:-20px;
+}
+
+#my-image{
+    width:100px !important;
+    height:auto;
+}

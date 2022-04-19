@@ -1,0 +1,98 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20220220164525_Initial.cs" />
+    <Compile Remove="Migrations\20220220164525_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20220314071919_Img.cs" />
+    <Compile Remove="Migrations\20220314071919_Img.Designer.cs" />
+    <Compile Remove="Migrations\20220314072552_Initial.cs" />
+    <Compile Remove="Migrations\20220314072552_Initial.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.21" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.21">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\Img\Image\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\Img\Image\cho-akita.jpg" />
+    <None Include="wwwroot\Img\Image\cho-poodle.jpg" />
+    <None Include="wwwroot\Img\Image\cho-retriever.jpg" />
+    <None Include="wwwroot\Img\Image\cho-samoyed.jpg" />
+    <None Include="wwwroot\Img\Image\Logo-Pet-Cung.png" />
+    <None Include="wwwroot\Img\Image\meo-ai-cap.jpg" />
+    <None Include="wwwroot\Img\Image\meo-anh-long-dai.jpg" />
+    <None Include="wwwroot\Img\Image\meo-anh-long-dai\meo-anh-long-dai-1.jpg" />
+    <None Include="wwwroot\Img\Image\meo-anh-long-dai\meo-anh-long-dai-3.jpg" />
+    <None Include="wwwroot\Img\Image\meo-anh-long-dai\meo-anh-long-dai-4.png" />
+    <None Include="wwwroot\Img\Image\meo-anh-long-dai\meo-anh-long-dai-5.jpg" />
+    <None Include="wwwroot\Img\Image\meo-anh-long-dai\meo-anh-long-dai-6.jpg" />
+    <None Include="wwwroot\Img\Image\meo-anh-long-dai\meo-anh-long-dai-7.jpg" />
+    <None Include="wwwroot\Img\Image\meo-anh-long-dai\meo-anh-long-dai2.jpg" />
+    <None Include="wwwroot\Img\Image\meo-anh-long-ngan\meo-anh-1.jpg" />
+    <None Include="wwwroot\Img\Image\meo-anh-long-ngan\meo-anh-10.jpg" />
+    <None Include="wwwroot\Img\Image\meo-anh-long-ngan\meo-anh-11.jpg" />
+    <None Include="wwwroot\Img\Image\meo-anh-long-ngan\meo-anh-12.png" />
+    <None Include="wwwroot\Img\Image\meo-anh-long-ngan\meo-anh-2.jpg" />
+    <None Include="wwwroot\Img\Image\meo-anh-long-ngan\meo-anh-3.jpg" />
+    <None Include="wwwroot\Img\Image\meo-anh-long-ngan\meo-anh-4.jpg" />
+    <None Include="wwwroot\Img\Image\meo-anh-long-ngan\meo-anh-5.jpg" />
+    <None Include="wwwroot\Img\Image\meo-anh-long-ngan\meo-anh-6.jpg" />
+    <None Include="wwwroot\Img\Image\meo-anh-long-ngan\meo-anh-7.jpg" />
+    <None Include="wwwroot\Img\Image\meo-anh-long-ngan\meo-anh-8.jpg" />
+    <None Include="wwwroot\Img\Image\meo-anh-long-ngan\meo-anh-9.png" />
+    <None Include="wwwroot\Img\Image\meo-ba-tu\meo-ba-tu-1.jpg" />
+    <None Include="wwwroot\Img\Image\meo-ba-tu\meo-ba-tu-10.jpg" />
+    <None Include="wwwroot\Img\Image\meo-ba-tu\meo-ba-tu-11.jpg" />
+    <None Include="wwwroot\Img\Image\meo-ba-tu\meo-ba-tu-2.jpg" />
+    <None Include="wwwroot\Img\Image\meo-ba-tu\meo-ba-tu-3.jpg" />
+    <None Include="wwwroot\Img\Image\meo-ba-tu\meo-ba-tu-4.jpg" />
+    <None Include="wwwroot\Img\Image\meo-ba-tu\meo-ba-tu-5.jpg" />
+    <None Include="wwwroot\Img\Image\meo-ba-tu\meo-ba-tu-6.jpg" />
+    <None Include="wwwroot\Img\Image\meo-ba-tu\meo-ba-tu-7.jpg" />
+    <None Include="wwwroot\Img\Image\meo-ba-tu\meo-ba-tu-8.jpg" />
+    <None Include="wwwroot\Img\Image\meo-ba-tu\meo-ba-tu-9.jpg" />
+    <None Include="wwwroot\Img\Image\meo-munchkin.jpg" />
+    <None Include="wwwroot\Img\Image\meo-ragdoll.jpg" />
+    <None Include="wwwroot\Img\Image\meo-rung-na-uy.jpg" />
+    <None Include="wwwroot\Img\Image\meo-scottish.jpg" />
+    <None Include="wwwroot\Img\Image\meo-xiem.jpg" />
+    <None Include="wwwroot\Img\Image\selling\cat-food01.png" />
+    <None Include="wwwroot\Img\Image\selling\cat-food02.jpg" />
+    <None Include="wwwroot\Img\Image\selling\cat-sand02.jpg" />
+    <None Include="wwwroot\Img\Image\selling\cat-sand03.jpg" />
+    <None Include="wwwroot\Img\Image\selling\cat-sand04.jpg" />
+    <None Include="wwwroot\Img\Image\selling\dog-food01.jpg" />
+    <None Include="wwwroot\Img\Image\selling\dog-food02.jpg" />
+    <None Include="wwwroot\Img\Image\selling\dog-food03.jpg" />
+    <None Include="wwwroot\Img\Image\selling\dog-food04.jpg" />
+    <None Include="wwwroot\Img\Image\selling\hoddie-suit.jpg" />
+    <None Include="wwwroot\Img\Image\selling\hoder.md" />
+    <None Include="wwwroot\Img\Image\selling\pet-balo.jpg" />
+    <None Include="wwwroot\Img\Image\selling\sand-hole.jpg" />
+    <None Include="wwwroot\Img\Image\selling\tiger-suit.jpg" />
+    <None Include="wwwroot\Img\Image\selling\wool-suit.jpg" />
+    <None Include="wwwroot\Img\Image\Sphynx\meo-ai-cap1.jpg" />
+    <None Include="wwwroot\Img\Image\Sphynx\meo-ai-cap2.jpg" />
+    <None Include="wwwroot\Img\Image\Sphynx\meo-ai-cap3.jpg" />
+    <None Include="wwwroot\Img\Image\Sphynx\meo-ai-cap4.jpg" />
+    <None Include="wwwroot\Img\Image\Sphynx\meo-ai-cap5.jpg" />
+    <None Include="wwwroot\Img\Image\Sphynx\meo-ai-cap6.jpg" />
+    <None Include="wwwroot\Img\Image\Sphynx\meo-ai-cap7.jpg" />
+    <None Include="wwwroot\Img\Image\Sphynx\meo-ai-cap8.jpg" />
+    <None Include="wwwroot\Img\Image\Sphynx\meo-ai-cap9.jpg" />
+  </ItemGroup>
+
+</Project>

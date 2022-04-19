@@ -1,0 +1,125 @@
+﻿body {
+    background-color: #ffed9e;
+}
+
+.my-header {
+    background: #FFCC00;
+}
+.my-header-text {
+    color: white;
+    font-size: 20px;
+}
+.my-logo {
+    height: 50px;
+    padding: 0px 15px;
+}
+.mar-0{
+    margin:4px;
+}
+.content {
+    border: solid gray 1px;
+    border-radius: 10px;
+}
+
+/*-------------Drop Menu--------------*/
+.dropbtn {
+    background-color: #FFCC00;
+    border:none;
+    padding-top:8px;
+}
+
+/* Dùng trong <div> để định vị nội dung thả xuống */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Nội dung thả xuống (Ẩn theo mặc định) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    color: #1411f0 !important;
+    background-color: #FFCC00;
+    min-width: 160px;
+    z-index: 1;
+}
+
+/* Liên kết bên trong danh sách thả xuống */
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Thay đổi định dạng của liên kết thả xuống khi di chuột qua */
+    .dropdown-content a:hover {
+        color: #1411f0;
+    }
+
+/* Hiển thị menu thả xuống khi di chuột */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Thay đổi màu nền của nút thả xuống khi nội dung được hiển thị */
+.dropdown:hover .dropbtn {
+    background-color: #FFCC00;
+}/*--------------END drop menu----------------*/
+
+ /*--------CSS danh sách bán chạy-------*/
+.content-2 {
+    width: 100vw;
+    margin: 20px 5%;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 5px;
+    vertical-align: middle;
+}
+
+.item {
+    position: relative;
+}
+
+.item img {
+    height: 400px;
+    object-fit: fill;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+
+.item h3 {
+    display: block;
+    position: absolute;
+    bottom: 15px;
+    left: 20px;
+    z-index: 3;
+    color: white;
+    transition: 0.5s ease;
+}
+
+.item .mask {
+    position: relative;
+    bottom: 0px;
+    height: 50px;
+    width: 300px;
+    z-index: 2;
+    background: rgba(0,0,0,0);
+    transition: 0.9s ease;
+}
+
+/*.item .mask:hover {
+    border-radius: 10px;
+    height: 200px;
+    background: rgba(0,0,0,0.5)
+}*/
+
+/*END*/
+
+.content {
+    border: solid gray 1px;
+    border-radius: 10px;
+    padding: 4px;
+    margin: 4px;
+}

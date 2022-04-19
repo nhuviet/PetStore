@@ -1,0 +1,1 @@
+﻿SqlConnection con = new SqlConnection(@"Data Source=TECHMAC\SQLEXPRESS;Initial Catalog=db_QL;Integrated Security=True");

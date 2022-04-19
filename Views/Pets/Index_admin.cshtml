@@ -1,0 +1,73 @@
+﻿@*@model IEnumerable<Pet_Store_BE.Models.Pet>*@
+@model Pet_Store_BE.Models.PetPureViewModel
+@{
+    ViewData["Title"] = "Danh mục kho";
+}
+<link rel="stylesheet" href="~/css/SearchForm.css" />
+<h1>Danh sách vật nuôi có bán tại cửa hàng</h1>
+
+<form asp-controller="Pets" asp-action="Index" method="get">
+    <select asp-for="PetPure" asp-items="Model.Purebred">
+        <option value="">Tất cả</option>
+    </select>
+    <div class="box">
+        <div class="container-2">
+            <span class="icon"><i class="fa fa-search"></i></span>
+            <input type="search" name="s" id="search" placeholder="Bạn muốn tìm loại boss nào?" />
+        </div>
+    </div>
+</form>
+
+<hr />
+<p>
+    <a asp-action="Create">Tạo mới</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Pets[1].Species)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pets[1].Purebred)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pets[1].Origin)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pets[1].Amount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Pets[1].Price)
+            </th>
+            
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Pets)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Species)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Purebred)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Origin)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Amount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)$
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id">Chỉnh sửa</a> |
+                    <a asp-action="Details" asp-route-id="@item.Id">Chi tiết</a> |
+                    <a asp-action="Delete" asp-route-id="@item.Id">Xóa</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

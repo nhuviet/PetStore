@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Pet_Store_BE", "Pet_Store_BE.csproj", "{04EBF196-7696-4490-837B-195370701EC2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pet_Store_BESolution.Data", "..\Pet_Store_BESolution.Data\Pet_Store_BESolution.Data.csproj", "{04C07C76-9E69-459E-B4E9-0F4A75677404}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{04EBF196-7696-4490-837B-195370701EC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04EBF196-7696-4490-837B-195370701EC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04EBF196-7696-4490-837B-195370701EC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04EBF196-7696-4490-837B-195370701EC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04C07C76-9E69-459E-B4E9-0F4A75677404}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04C07C76-9E69-459E-B4E9-0F4A75677404}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04C07C76-9E69-459E-B4E9-0F4A75677404}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04C07C76-9E69-459E-B4E9-0F4A75677404}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F363490D-547E-4A02-B709-26B27496CD9D}
+	EndGlobalSection
+EndGlobal
