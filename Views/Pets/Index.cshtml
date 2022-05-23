@@ -15,11 +15,13 @@
 <!-- Global styles START -->
 <link href="assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 <link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
 <!-- Global styles END -->
 <!-- Page level plugin styles START -->
 <link href="assets/pages/css/animate.css" rel="stylesheet">
 <link href="assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet">
 <link href="assets/plugins/owl.carousel/assets/owl.carousel.css" rel="stylesheet">
+
 <!-- Page level plugin styles END -->
 <!-- Theme styles START -->
 <link href="~/css/assets/pages/css/components.css" rel="stylesheet">
@@ -59,17 +61,15 @@
                             <div class="product-item">
                                 <div class="pi-img-wrapper">
                                     <a asp-action="Details" asp-route-id="@item.Id">
-                                        <img src="~/Img/Image/meo-anh-long-ngan/meo-anh-12.png" class="img-responsive" id="my-image" />
-                                        @*<img src="@Html.DisplayFor(modelItem => item.Img)" class="img-responsive" />*@
-                                        @*@Html.DisplayFor(modelItem => item.Img)*@
+                                        <img src="@(@Html.DisplayFor(modelItem => item.Img))" class="img-responsive" id="my-image" />
                                     </a>
                                 </div>
-                                
-                                    <h3><a asp-action="Details" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.Species)</a></h3>
-                                
-                                    <button class="btn btn-default add2cart" onclick="msgbox()">Thêm vào giỏ hàng</button>
-                                    <div class="sticker sticker-sale"></div>
-</div>
+
+                                <h3><a asp-action="Details" asp-route-id="@item.Id">@Html.DisplayFor(modelItem => item.Species)</a></h3>
+
+                                <button class="btn btn-default add2cart" onclick="msgbox()">Thêm vào giỏ hàng</button>
+                                <div class="sticker sticker-sale"></div>
+                            </div>
                         }
                     </div>
                 </div>

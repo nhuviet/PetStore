@@ -22,6 +22,7 @@
     -ms-transition: width .55s ease;
     -o-transition: width .55s ease;
     transition: width .55s ease;
+    border-radius:10px;
 }
 .container-2 input#search::-webkit-input-placeholder {
     color: #65737e;
